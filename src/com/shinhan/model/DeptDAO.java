@@ -158,6 +158,8 @@ public class DeptDAO {
 		// ? : binding 변수 (Statement는 지원안함)
 		//Statement를 상속받은 하위 PreparedStatement
 		try {
+			//conn.setAutoCommit(true); --DML
+			//**SQL문 실행 후 자동 commit되는 것이 default이다 => 상황에 따라 조정이 가능하다.
 			pst = conn.prepareStatement(sql); //SQL문 준비
 			pst.setInt(1, deptid); // ?에 값을 채운다.
 			count = pst.executeUpdate(); //DML은 executeUpdate()로 실행
