@@ -4,7 +4,8 @@ import java.util.List;
 
 import com.shinhan.dto.DeptVO;
 
-//View : client 보여주는 역할, 웹에서 JSP로 작성
+//View : client 보여주는 역할, 웹에서 JSP로 작성(JSP/Servlet, Spring), 
+//				SpringBoot(Backend) + ReactJS(Frontend)
 public class DeptView {
 	public static void print(String message) {
 		System.out.println("--------------------");
